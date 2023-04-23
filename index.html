@@ -11,7 +11,7 @@
     <div id="header">
       <div class="container">
         <nav>
-          <img src="images/logo.png" class="logo" />
+          <img src="images/NAME.png" class="logo" />
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -34,10 +34,76 @@
             <img src="images/pic.jpg" />
           </div>
           <div class="about-col-2">
-            <h1>About Me</h1>
+            <h1 class="sub-title">About Me</h1>
+            <p class="info">
+              "Hi there! My name is Praveen Kumar, and I'm a passionate frontend
+              developer with a year of experience creating engaging and dynamic
+              websites and applications. I specialize in crafting responsive,
+              user-friendly interfaces using modern technologies such as HTML,
+              CSS and JavaScript. I'm committed to delivering high-quality
+              results and constantly strive to learn and grow as a developer. I
+              enjoy collaborating with clients and teams to develop innovative
+              solutions that meet their unique needs and exceed their
+              expectations. In my free time, I enjoy tinkering with new
+              technologies and experimenting with design concepts. I also enjoy
+              contributing to the open-source community and have several
+              projects on Github. Thank you for taking the time to learn a
+              little bit about me. If you're interested in collaborating or
+              learning more about my work, feel free to reach out!"
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>IT Engineer</span><br />IT Engineering</li>
+                <li><span>Web Developer</span><br />Web App Development</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2021 - Current</span><br />Pursuing at Collage</li>
+                <li>
+                  <span>2023 - Current</span><br />Working with Elite Softwares
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span>IT Engineer</span><br />B.TECH from D.Y.Patil Pune
+                </li>
+                <li>
+                  <span>2023 - Current</span><br />Web Development training at
+                  Elite Softwares
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("tab-links active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("tab-contents active-tab");
+        }
+      }
+    </script>
   </body>
 </html>
