@@ -174,3 +174,16 @@ nav ul li a:hover::after {
   background: yellow;
   transform: translate(-10px);
 }
+
+/* contact */
+
+.contact-left {
+  flex-basis: 35%;
+  color: goldenrod;
+}
+.contact-right {
+  width: 60%;
+}
+.contact-left p {
+  margin-top: 30%;
+}
