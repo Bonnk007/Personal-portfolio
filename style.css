@@ -211,10 +211,12 @@ nav ul li a:hover::after {
   transition: transform 0.5s;
 }
 .social-icons a:hover {
+  margin-top: 20px;
   color: white;
   transform: translate(-5px);
 }
 .btn.btn2 {
+  margin-top: 20px;
   font-size: 20px;
   display: inline-block;
   background: goldenrod;
@@ -319,4 +321,9 @@ nav .fa-solid {
   .copyright {
     font-size: 14px;
   }
+}
+#msg {
+  color: #61b752;
+  margin-top: 30px;
+  display: block;
 }
