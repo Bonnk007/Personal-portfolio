@@ -4,6 +4,9 @@
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: black;
   color: #000000;
@@ -312,5 +315,8 @@ nav .fa-solid {
   .contact-left,
   .contact-right {
     flex-basis: 100%;
+  }
+  .copyright {
+    font-size: 14px;
   }
 }
